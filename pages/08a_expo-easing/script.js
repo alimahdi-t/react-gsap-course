@@ -43,22 +43,22 @@ fab.addEventListener("click", () => {
       });
     });
   } else {
-    children.forEach((child) => {
-      // 🔜 Collapse animation will go here
-      gsap.to(children, {
-        x: 0,
-        y: 0,
-        opacity: 0,
-        scale: 0.8,
-        rotate: 0,
-        duration: 0.3,
-        ease: "power1.in",
-        pointerEvents: "none",
-        stagger: {
-          each: 0.1,
-          from: "end",
-        },
-      });
+    // children.forEach((child) => {
+    // 🔜 Collapse animation will go here
+    gsap.to(children, {
+      x: 0,
+      y: 0,
+      opacity: 0,
+      scale: 0.8,
+      rotate: 0,
+      duration: 0.3,
+      ease: "power1.in",
+      pointerEvents: "none",
+      stagger: {
+        each: 0.1,
+        from: "end",
+      },
     });
+    // });
   }
 });
